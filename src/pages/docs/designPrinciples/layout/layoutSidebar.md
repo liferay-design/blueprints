@@ -10,9 +10,10 @@ weight: 3
 {$page.description} The space is organized in 3 columns for the sidebar and 9 or 8 columns for the content depending on its type. This way we would have two different configurations:
 
 ### 3+9 columns
+
 This is the default configuration used when the content is a table, a list or any other content structure except a form.
 
-![layout sidebar and box, 1440px width screen](../../../images/layoutSidebar.jpg)
+![layout sidebar and box, 1440px width screen](../../../images/screenshots/layoutSidebar.jpg)
 
 #### Responsive behavior
 
@@ -21,44 +22,45 @@ On viewport sizes equal or less than 768px we introduce to changes of the layout
 * The change of the vertical navigation to a toggle top navigation as is described on the [Nested navigation](../../patterns/Navigation/verticalNav.html).
 * The change of the box from 9 to 12 columns.
 
-
-![layout sidebar + box responsive summary](../../../images/layoutsidebarsummary.jpg)
+![layout sidebar + box responsive summary](../../../images/screenshots/layoutsidebarsummary.jpg)
 
 #### Metrics
 
-![layout sidebar + box metrics](../../../images/layoutsidebarmetrics.jpg)
+![layout sidebar + box metrics](../../../images/screenshots/layoutsidebarmetrics.jpg)
 
 #### Example
 
-![layout sidebar + box example](../../../images/layoutsidebarexample.jpg)
-
+![layout sidebar + box example](../../../images/screenshots/layoutsidebarexample.jpg)
 
 ### 3+8 columns (Forms)
+
 When the box shown in this type of layout is a box that contains a form, it has to be adapted to the measures established for form containers. Therefore the space to occupy would be 8 instead of 9 columns.
 
-![layout sidebar and box 8 columns, 1440px width screen](../../../images/layoutSidebarBox8.jpg)
+![layout sidebar and box 8 columns, 1440px width screen](../../../images/screenshots/layoutSidebarBox8.jpg)
 
 #### Responsive behavior
 
 The main point to take into account is the change from 8 to 9 columns on viewport sizes equal or less than 992px in order to optimize space for content.
 
-![layout sidebar + box 8 columns responsive summary](../../../images/layoutsidebarbox8summary.jpg)
+![layout sidebar + box 8 columns responsive summary](../../../images/screenshots/layoutsidebarbox8summary.jpg)
 
 #### Metrics
 
-![layout sidebar + box 8 columns metrics](../../../images/layoutsidebarbox8metrics.jpg)
+![layout sidebar + box 8 columns metrics](../../../images/screenshots/layoutsidebarbox8metrics.jpg)
 
 #### Example
 
-![layout sidebar + box 8 columns example](../../../images/layoutsidebarbox8example.jpg)
+![layout sidebar + box 8 columns example](../../../images/screenshots/layoutsidebarbox8example.jpg)
 
 ### Exceptions
 
 3+9 columns and 3+8 columns are the most common situations to have in Lexicon interfaces, but 2 other exceptional scenarios are possible.
+
 * Scenario 1: 3+9 columns configuration turns into 2+10 columns configuration.
 * Scenario 2: 3+8 columns configuration turns into 2+9 columns configuration.
 
 These two scenarios are only desirable when you are sure that the sidebar width is enough with 2 columns. Reasons to move into these configurations can be:
+
 * Really short vertical navigation titles. Please make sure this happens in all the languages that your site manages.
 * More space in the main box to fit a table with many columns.
 

@@ -28,7 +28,7 @@ This collection of charts grow with Liferay products' necesities. So come back e
                 <div class="aspect-ratio card-item-first">
                     <div class="custom-control custom-checkbox">
                         <label class="labelbg">
-                            <img alt="thumbnail"class="aspect-ratio-item-center-middle aspect-ratio-item-fluid" src="../../../images/ChartBarCard.png">
+                            <img alt="thumbnail"class="aspect-ratio-item-center-middle aspect-ratio-item-fluid" src="../../../images/screenshots/ChartBarCard.png">
                         </label>
                     </div>
                 </div>
@@ -48,7 +48,7 @@ This collection of charts grow with Liferay products' necesities. So come back e
                 <div class="aspect-ratio card-item-first">
                     <div class="custom-control custom-checkbox">
                         <label class="labelbg">
-                            <img alt="thumbnail"class="aspect-ratio-item-center-middle aspect-ratio-item-fluid" src="../../../images/ChartDoughnutCard.png">
+                            <img alt="thumbnail"class="aspect-ratio-item-center-middle aspect-ratio-item-fluid" src="../../../images/screenshots/ChartDoughnutCard.png">
                         </label>
                     </div>
                 </div>
@@ -70,7 +70,7 @@ This collection of charts grow with Liferay products' necesities. So come back e
                 <div class="aspect-ratio card-item-first">
                     <div class="custom-control custom-checkbox">
                         <label class="labelbg">
-                            <img alt="thumbnail"class="aspect-ratio-item-center-middle aspect-ratio-item-fluid" src="../../../images/ChartHeatmapCard.png">
+                            <img alt="thumbnail"class="aspect-ratio-item-center-middle aspect-ratio-item-fluid" src="../../../images/screenshots/ChartHeatmapCard.png">
                         </label>
                     </div>
                 </div>
@@ -90,7 +90,7 @@ This collection of charts grow with Liferay products' necesities. So come back e
                 <div class="aspect-ratio card-item-first">
                     <div class="custom-control custom-checkbox">
                         <label class="labelbg">
-                            <img alt="thumbnail"class="aspect-ratio-item-center-middle aspect-ratio-item-fluid" src="../../../images/ChartLineCard.png">
+                            <img alt="thumbnail"class="aspect-ratio-item-center-middle aspect-ratio-item-fluid" src="../../../images/screenshots/ChartLineCard.png">
                         </label>
                     </div>
                 </div>
@@ -112,7 +112,7 @@ This collection of charts grow with Liferay products' necesities. So come back e
                 <div class="aspect-ratio card-item-first">
                     <div class="custom-control custom-checkbox">
                         <label class="labelbg">
-                            <img alt="thumbnail"class="aspect-ratio-item-center-middle aspect-ratio-item-fluid" src="../../../images/ChartPieCard.png">
+                            <img alt="thumbnail"class="aspect-ratio-item-center-middle aspect-ratio-item-fluid" src="../../../images/screenshots/ChartPieCard.png">
                         </label>
                     </div>
                 </div>
@@ -132,7 +132,7 @@ This collection of charts grow with Liferay products' necesities. So come back e
                 <div class="aspect-ratio card-item-first">
                     <div class="custom-control custom-checkbox">
                         <label class="labelbg">
-                            <img alt="thumbnail"class="aspect-ratio-item-center-middle aspect-ratio-item-fluid" src="../../../images/ChartStackedBarCard.png">
+                            <img alt="thumbnail"class="aspect-ratio-item-center-middle aspect-ratio-item-fluid" src="../../../images/screenshots/ChartStackedBarCard.png">
                         </label>
                     </div>
                 </div>

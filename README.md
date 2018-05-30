@@ -1,22 +1,22 @@
-# lexicon-site
+# Blueprints
 
 [![Built with Electric](https://img.shields.io/badge/built%20with-electric-f3c302.svg?style=flat)](http://electricjs.com)
 
 ## Setup
 
-1. Make sure you have [node and npm](https://nodejs.org/en/download/) installed:
+1.  Make sure you have [node and npm](https://nodejs.org/en/download/) installed (Node V < 9):
 
 ```sh
 node -v && npm -v
 ```
 
-2. Install our global dependencies:
+2.  Install our global dependencies:
 
 ```sh
-[sudo] npm i -g electric-cli@alpha
+[sudo] npm i -g electric-cli
 ```
 
-3. Install our local dependencies:
+3.  Install our local dependencies:
 
 ```sh
 npm i
@@ -30,7 +30,7 @@ npm i
 electric run
 ```
 
-* Deploy to production (send build files to `wedeploy-lexicon2` branch):
+* Deploy to production (send build files to `master` branch):
 
 ```
 electric deploy

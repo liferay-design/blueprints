@@ -1,10 +1,10 @@
 {
-  "name": "lexicon-site",
+  "name": "liferay-brand-guidelines",
   "version": "0.0.0",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/liferay/lexicon-site"
+    "url": "https://github.com/liferay-design/blueprints"
   },
   "scripts": {
     "start": "electric"

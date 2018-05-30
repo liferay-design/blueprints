@@ -15,15 +15,14 @@ if (!NODE_ENV) {
 	if (['build', 'deploy'].indexOf(command) > -1) {
 		NODE_ENV = 'production';
 
-	}
-	else {
+	} else {
 		NODE_ENV = 'development';
 	}
 
 	process.env.NODE_ENV = NODE_ENV;
 }
 
-const mapSVG = function(item, index) {
+const mapSVG = function (item, index) {
 	var iconName = path.basename(item, '.svg').toLowerCase();
 
 	if (_.startsWith(iconName, 'flags-')) {
@@ -49,10 +48,10 @@ const getLangInfo = function (code) {
 
 	var lang = langs.getLanguageInfo(alternateCodes[langCode] || langCode).name;
 
-	if(countryCode) {
+	if (countryCode) {
 		var country = countries[countryCode.toUpperCase()];
 
-		if(country) {
+		if (country) {
 			lang += ' (' + country.name + ')';
 		}
 	}
@@ -64,7 +63,7 @@ const metalComponents = ['electric-clay-components']
 	.concat(fs.readdirSync('./node_modules').filter(f => f.match(/^clay-.*/)));
 
 module.exports = {
-	frontMatterHook: function(data) {
+	frontMatterHook: function (data) {
 		if (NODE_ENV === 'development') {
 			delete data.googleAnalytics;
 		}
@@ -93,12 +92,11 @@ module.exports = {
 			flags = flags.map(mapSVG);
 
 			var flagData = flags.reduce(
-				function(prev, item, index) {
+				function (prev, item, index) {
 					prev[item] = getLangInfo(item);
 
 					return prev;
-				},
-				{}
+				}, {}
 			);
 
 			iconsDoc.icons = icons;
@@ -108,14 +106,14 @@ module.exports = {
 
 		return data;
 	},
-	markdownRenderer: function(md) {
+	markdownRenderer: function (md) {
 		var headings = require('./markdown_plugins/heading_ids');
 		var images = require('./markdown_plugins/retina_images');
 		var time = require('./markdown_plugins/time');
 
 		md.use(headings)
-		.use(images)
-		.use(time);
+			.use(images)
+			.use(time);
 
 		return md;
 	},
@@ -124,10 +122,9 @@ module.exports = {
 		includePaths: ['node_modules', clay.includePaths]
 	},
 	deployOptions: {
-		branch: 'wedeploy-lexicon2'
+		branch: 'master'
 	},
-	vendorSrc: [
-		{
+	vendorSrc: [{
 			dest: 'dist/vendor/source-sans-pro',
 			src: 'node_modules/source-sans-pro/**'
 		},

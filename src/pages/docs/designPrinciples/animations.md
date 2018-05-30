@@ -17,21 +17,21 @@ Lexicon provides different types of animation for certain purposes. We use these
 
 #### Empty collection
 
-![satellite navigating in the space](../../../images/empty_state.gif)
+![satellite navigating in the space](../../../images/animations/empty_state.gif)
 
 The satellite express that the dataset is empty not being anything the collection.
 Use this animation when your initial dataset is empty or a folder is empty.
 
 #### Empty search
 
-![satellite navigating in the space](../../../images/search_state.gif)
+![satellite navigating in the space](../../../images/animations/search_state.gif)
 
 The telescope represents the idea of looking for something in the space a nothing has been found.
-Use this animation for empty search results or empty results on while applying filters over a data set. 
+Use this animation for empty search results or empty results on while applying filters over a data set.
 
 #### Successful empty state
 
-![satellite navigating in the space](../../../images/success_state.gif)
+![satellite navigating in the space](../../../images/animations/success_state.gif)
 
 The spaceship taking off represents a successful state.
 Use this animation when a list has been emptied that is worthy of celebration. For example, when a notifications list gets emptied.
