@@ -22,6 +22,17 @@ node -v && npm -v
 npm i
 ```
 
+### New?
+
+Start with [this amazing set up process](https://github.com/naoki-evan-hisamoto/phresh-n-clean/blob/master/README.md#set-up), core things you'll need are:
+
+1.  Homebrew
+1.  Node + NPM
+1.  Homebrew Cask
+1.  Git
+
+For this specific repo, because we're using Electric you need to use [n](https://github.com/tj/n) to install Node 8.0.
+
 ## Usage
 
 - Build the site, serve it locally, and watch for any changes:
@@ -30,7 +41,7 @@ npm i
 electric run
 ```
 
-- Deploy to production (send build files to `production` branch):
+- Deploy to production (send build files to `master` branch)&mdash;you'll need to be added to the WeDeploy project for this site to do this&mdash;if you aren't, you'll have to [send a pull request](https://help.github.com/articles/creating-a-pull-request/)):
 
 ```
 electric deploy
