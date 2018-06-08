@@ -2,20 +2,18 @@
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
-
+	margin-bottom: $base-size * 8;
+	padding-bottom: $base-size * 4;
 	@media (min-width: $screen-sm) {
 		margin-left: $sidebar-width;
 	}
-
 	.lexicon-site-container {
 		flex: 1;
 		max-width: $content-max-width;
-		
 		@media (min-width: $screen-xs) {
 			padding-left: $base-size;
 			padding-right: $base-size * 2;
 		}
-
 		@media (min-width: $screen-md) {
 			padding-left: $base-size * 2;
 			padding-right: $base-size * 4;
@@ -25,11 +23,9 @@
 
 .sidenav-menu-slider .sidenav-menu {
 	width: 100%;
-
 	@media (min-width: $grid-float-breakpoint) {
 		width: $sidebar-width - 100px;
 	}
-
 	@media (min-width: $screen-sm) {
 		width: $sidebar-width;
 	}
@@ -37,20 +33,17 @@
 
 .sidenav-fixed.sidenav-menu-slider {
 	visibility: visible;
-
 	&.toggler-expanded {
 		width: 100%;
 	}
-
-	&, &.toggler-expanded {
+	&,
+	&.toggler-expanded {
 		@media (max-width: $grid-float-breakpoint - 1) {
 			transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 		}
-
 		@media (min-width: $grid-float-breakpoint) {
 			width: $sidebar-width - 100px;
 		}
-
 		@media (min-width: $screen-sm) {
 			width: $sidebar-width;
 		}
@@ -61,7 +54,6 @@
 	bottom: 0;
 	height: initial;
 	top: $base-size * 2.9;
-
 	@media (min-width: $grid-float-breakpoint) {
 		top: 0;
 	}
@@ -69,4 +61,8 @@
 
 .sidebar-search {
 	margin-bottom: $base-size * 1.8;
+}
+
+.content {
+	background: $bg-color;
 }

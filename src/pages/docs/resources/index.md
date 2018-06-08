@@ -1,28 +1,19 @@
 ---
 title: "Resources"
-description: "Resources offers you a series of links to previous versions of Lexicon and presentations done related to this design language."
+description: "Liferay's Brand Resources"
 layout: "guide"
-weight: 5
+icon: "lexicon-site-about"
+weight: 4
 ---
 
-{$page.description}
+### Design language
 
-### Presentations
+Lexicon is a design language created with the aim of providing a common framework for building interfaces within the Liferay product ecosystem. A guide to design principles, components, patterns and contexts of use that contributes to give consistency and coherence to these products and, ultimately, provide a satisfactory and unified experience to its users.
 
-**2018 January**
+Lexicon is a constantly evolving project. An iterative work that seeks to improve and gradually adapt to the evolution of technology and people.
 
-Principles, grid, distances... are important elements to know how to craft inferfaces using Lexicon. This slide deck will help you to understand how to build your own components and how to use the most common templates.
+### Modular approach
 
-<div class="videoContainer">
-    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSfh3xT-ogqij9lmxzJ3n1BmmweFu9XSYahZATIbt7R6jZpqrXEp3iGNSkGwIbGsXKDLGe9d5zs6PnH/embed?start=false&loop=false&delayms=3000" class="video"></iframe>
-</div>
+The Lexicon approach to interface design is based essentially on modularity. It is configured as a system that from a controlled number of components is able to respond to the multiple and different needs of liferay products. An exercise in synthesis, abstraction and coordination that seeks to simplify processes, reduce production times and, above all, to guarantee the consistency we want for the use experience.
 
-**2017 October**
-
-Lexicon Evolution was presented in DEVCON, LNAS and LRESP in October 2017. This presentation shows the news and updates, and lines of work of our design system.
-
-<script async class="speakerdeck-embed" data-id="2e287bdf09a44bb78231e707a84a26a5" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-### Previous Lexicon Versions
-
-[Lexicon Version 1.0](http://v1.lexicondesign.io)
+For this, the construction of Lexicon is based on the Atomic Design theoretical approach. A work methodology based on modularity that seeks to give a more hierarchical and organized logic to the creation of interfaces design systems. This methodology has been ideated and developed by the designer Brad Frost and is based on nonlinear process organized across five stages: Atoms, Molecules, Organisms, Templates and Pages.
