@@ -122,7 +122,7 @@ module.exports = {
 		includePaths: ['node_modules', clay.includePaths]
 	},
 	deployOptions: {
-		branch: 'master'
+		branch: 'production'
 	},
 	vendorSrc: [{
 			dest: 'dist/vendor/source-sans-pro',
