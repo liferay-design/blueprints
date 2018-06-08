@@ -24,13 +24,13 @@ npm i
 
 ## Usage
 
-* Build the site, serve it locally, and watch for any changes:
+- Build the site, serve it locally, and watch for any changes:
 
 ```
 electric run
 ```
 
-* Deploy to production (send build files to `master` branch):
+- Deploy to production (send build files to `production` branch):
 
 ```
 electric deploy
