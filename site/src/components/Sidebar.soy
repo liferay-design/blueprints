@@ -1,0 +1,44 @@
+{namespace Sidebar}
+
+/**
+ */
+{template .render}
+	{@param section: ?}
+	<div class="navbar navbar-mobile navbar-expand-lg navbar-header">
+		<a class="navbar-brand d-flex" href="/">
+			<img class="logo mr-2" src="/images/icons/icon-blueprints.svg" alt="Liferay Blueprints" />
+		</a>
+
+		<button class="navbar-toggler sidebar-toggler p-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<svg aria-hidden="true" class="lexicon-icon lexicon-icon-bars">
+				<use xlink:href="/vendor/lexicon/icons.svg#bars" />
+			</svg>
+		</button>
+	</div>
+
+	<nav class="sidebar-toggler-content sidenav-fixed sidenav-menu-slider" id="lexicon-sidebar">
+		<div class="sidebar sidebar-lexicon-site sidenav-menu d-flex flex-column">
+			<div class="sidebar-header">
+				<div class="navbar navbar-header justify-content-start">
+					<a class="navbar-brand" href="/">
+						<img class="logo mr-2" src="/images/icons/icon-blueprints.svg" alt="Liferay Blueprints" />
+					</a>
+				</div>
+			</div>
+
+			<div class="sidebar-body mb-auto">
+				<div class="sidebar-search">
+					{call ElectricSearchAutocomplete.render}
+						{param maxResults: 5 /}
+						{param path: '/docs/' /}
+						{param placeholder: 'Search' /}
+					{/call}
+				</div>
+
+				{call MainNavigation.render}
+					{param section: $section /}
+				{/call}
+			</div>
+		</div>
+	</nav>
+{/template}

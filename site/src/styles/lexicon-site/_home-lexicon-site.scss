@@ -1,0 +1,253 @@
+* {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.vertical-title {
+  color: $neutral7;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-top: 250px;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+}
+
+.mobile-size {
+  @include media-breakpoint-down(sm) {
+    width: 98px;
+  }
+}
+
+.home {
+  .btn-version {
+    .btn {
+      background-color: rgba(255, 255, 255, 0.3);
+      border-color: transparent;
+      color: #fff;
+      padding: 3px 8px 3px 12px;
+      text-transform: none;
+      .lexicon-icon-caret-bottom {
+        margin-top: 0.03rem;
+      }
+    }
+    .dropdown-menu {
+      min-width: 140px;
+    }
+  }
+  .font-weight-bold {
+    font-weight: 900 !important;
+  }
+  a.card:hover {
+    text-decoration: none;
+  }
+  .card {
+    border-bottom: 14px solid $brand-light;
+    border-radius: 14px;
+    box-shadow: 4px 6px 36px rgba(48, 49, 63, 0.15);
+    margin-bottom: 24px;
+    min-height: 100%;
+    transition: all 0.4s;
+    &:hover {
+      background-color: #f2f6ff;
+      border-color: $brand-dark;
+      box-shadow: 6px 9px 36px rgba(48, 49, 63, 0.2);
+      transform: translateY(-3px);
+    }
+    .card-body {
+      padding: 32px;
+    }
+    h2 {
+      color: $text-color-light;
+      font-size: 21px;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+    .btn {
+      color: $text-color-light;
+      display: inline-flex;
+      font-size: 11px;
+      letter-spacing: 1px;
+      img {
+        height: 1em;
+        margin: auto;
+      }
+    }
+    p {
+      color: #a1a3b6;
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 16px;
+      @include media-breakpoint-up(sm) {
+        margin-bottom: 32px;
+      }
+    }
+    img.mx-auto {
+      margin: 32px 0 40px;
+      width: 98px;
+    }
+  }
+}
+
+.intro {
+  background-color: $brand-primary;
+  background-image: linear-gradient( 20deg, rgba(11, 99, 206, 0.4), rgba(11, 99, 206, 0.6)), url("/images/home/blueprints-bg.svg");
+  background-size: cover;
+  color: $brand-light;
+  margin-bottom: 32px;
+  padding: 88px 0;
+  @include media-breakpoint-up(sm) {
+    background-attachment: fixed;
+    background-position: center -112px;
+    padding: 212px 0 272px;
+  }
+  .btn-lg {
+    border-radius: 6px;
+    border-width: 2px;
+    font-size: 1rem;
+    min-height: 64px;
+    padding: 18px 64px;
+  }
+  .btn-light {
+    background-color: $white;
+    border-color: $white;
+    color: $brand-dark;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    line-height: $base-size;
+    text-transform: uppercase;
+    &:hover {
+      background-color: #f2f6ff;
+    }
+  }
+  .h1 {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1;
+    margin: 48px 0 24px;
+    word-break: normal;
+    @include media-breakpoint-up(sm) {
+      font-size: 64px;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 82px;
+      margin-bottom: 56px;
+    }
+  }
+  .h3 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 1.8;
+    margin-bottom: 48px;
+    text-transform: uppercase;
+    @include media-breakpoint-up(sm) {
+      font-size: 18px;
+      letter-spacing: 5px;
+      margin-bottom: 66px;
+    }
+  }
+}
+
+.teasers {
+  background-color: $brand-light;
+  margin-top: -72px;
+  @include media-breakpoint-up(sm) {
+    margin-top: -120px;
+  }
+}
+
+.contact-us {
+  background-attachment: fixed;
+  background-color: $brand-light;
+  background-image: url("/images/home/blueprints-bg.svg"), linear-gradient(20deg, rgb(247, 248, 249), rgb(232, 232, 231));
+  background-position: center;
+  color: $text-color-light;
+  padding: 136px 0 96px;
+  @include media-breakpoint-up(sm) {
+    background-size: 140%;
+    margin-top: -60px;
+    padding: 248px 0 212px;
+  }
+  .media-body {
+    h2 {
+      font-size: $base-size * 1.5;
+      .subtitle {
+        font-size: .7em;
+        font-weight: normal;
+      }
+    }
+    a {
+      border-bottom: 5px solid $action-blue;
+      color: $text-color-light;
+      padding-bottom: 4px;
+      transition: all 0.4s;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.link-blocks {
+  background-color: $text-color-light;
+  color: $brand-light;
+  padding: 56px 0;
+  @include media-breakpoint-up(sm) {
+    padding: 128px 0;
+  }
+  h1 {
+    line-height: 1.4;
+  }
+  p {
+    color: #8d8fa8;
+    font-size: 20px;
+  }
+  .card {
+    background-color: #2b2d39;
+    border-width: 0;
+    box-shadow: 4px 6px 24px rgba(30, 31, 39, 0.3);
+    &:hover {
+      background-color: #272833;
+    }
+    img.mx-auto {
+      height: 60px;
+      margin: 16px 0 32px;
+    }
+    a {
+      border-bottom: 3px solid $action-blue;
+      color: $brand-light;
+      display: inline-block;
+      padding-bottom: 4px;
+      text-decoration: none;
+    }
+  }
+}
+
+.social-icons {
+  list-style: none;
+  margin: 48px 0;
+  padding: 0;
+  text-align: center;
+  li {
+    align-items: center;
+    background-color: $neutral8;
+    border-radius: 100%;
+    display: inline-flex;
+    height: 40px;
+    justify-content: center;
+    margin: 0 4px;
+    transition: 0.3s;
+    width: 40px;
+    @media (min-width: 540px) {
+      margin-bottom: 12px;
+    }
+    &:hover {
+      background-color: $action-blue;
+    }
+  }
+  img {
+    width: 16px;
+  }
+}
