@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "blueprints",
+  "description": "Liferay Design Team's Guidlines Site",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Ryan Garant <ryan.garant@liferay.com>",
   "dependencies": {
     "gatsby": "next",
     "gatsby-link": "next",
@@ -17,9 +17,8 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "gatsby develop",
+    "format": "prettier --write 'src/**/*.js'"
   },
   "devDependencies": {
     "prettier": "^1.13.7"
