@@ -1,21 +1,19 @@
-import React from "react"
+import React, {component} from "react"
 import { Link, graphql } from "gatsby"
 import { css } from "react-emotion"
 import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
 
 export default ({ data }) => {
-  console.log(data)
   return (
     <Layout>
       <div>
         <h1
           className={css`
             display: inline-block;
-            border-bottom: 1px solid;
           `}
         >
-          Amazing Pandas Eating Things
+          Home Page
         </h1>
         <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
