@@ -7,10 +7,6 @@ import Layout from "../components/layout"
 export default ({ data }) => (
     <Layout>
       <div>
-
-
-
-
         <h1
           className={css`
             display: inline-block;
