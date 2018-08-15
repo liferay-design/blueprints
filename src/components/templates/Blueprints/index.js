@@ -1,33 +1,91 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Link, graphql } from 'gatsby'
 import { Sidebar } from 'semantic-ui-react'
 import MainLayout from '../MainLayout'
 import classes from './styles.module.scss'
+import { cloneDeep, get, set } from 'lodash'
 
-export default ({ data }) => {
-  const post = data.markdownRemark
+function upsertAtPath(path, value, obj) {
+  obj = cloneDeep(obj)
+  const pathValue = get(obj, path)
 
-  return (
-    <MainLayout>
-      <div>
-        <Sidebar visible="true" width="wide">
-          {data.allMarkdownRemark.edges.map(({ node }) => (
-            <Link key={node.id} to={node.fields.slug}>
-              <h3>{node.frontmatter.title}</h3>
-            </Link>
-          ))}
-        </Sidebar>
+  if (!pathValue) {
+    set(obj, path, value)
+  } else {
+    set(obj, path, { ...pathValue, ...value })
+  }
 
-        <div className={classes.contentContainer}>
-          <h1>{post.frontmatter.title}</h1>
+  return obj
+}
 
-          <h2>Blueprints</h2>
+const path1 = 'guidelines'
+const path2 = 'guidelines.children.color'
+const obj2 = upsertAtPath(
+  path1,
+  { title: 'guidelines', slug: '/guidelines' },
+  {}
+)
+const obj3 = upsertAtPath(
+  path2,
+  { title: 'color', slug: '/guidelines/color' },
+  obj2
+)
 
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+export default class Blueprints extends Component {
+  buildSidebarTree(markdownNodes) {
+    const sidebarTree = markdownNodes.edges.reduce(
+      (currentTree, currentValue) => {
+        const slug = currentValue.node.fields.slug
+        const title = currentValue.node.frontmatter.title
+
+        const slugArr = slug
+          .split('/')
+          .filter(slug => slug !== '')
+          .slice(1)
+
+        const treePath = slugArr.join('.children.')
+        const sidebarItemValue = { title, slug }
+
+        return upsertAtPath(treePath, sidebarItemValue, currentTree)
+      },
+      {}
+    )
+
+    return sidebarTree
+  }
+
+  render() {
+    const post = this.props.data.markdownRemark
+    const markdown = this.props.data.allMarkdownRemark
+
+    this.buildSidebarTree(markdown)
+
+    return (
+      <MainLayout>
+        <div>
+          <Sidebar visible width="wide">
+            {markdown.edges.map(({ node }) => (
+              <Link key={node.id} to={node.fields.slug}>
+                <h3>{node.frontmatter.title}</h3>
+              </Link>
+            ))}
+          </Sidebar>
+
+          <div className={classes.contentContainer}>
+            <h1>{post.frontmatter.title}</h1>
+
+            <h2>Blueprints</h2>
+
+            <div
+              dangerouslySetInnerHTML={{
+                __html: post.html,
+              }}
+            />
+          </div>
         </div>
-      </div>
-    </MainLayout>
-  )
+      </MainLayout>
+    )
+  }
 }
 
 export const query = graphql`
