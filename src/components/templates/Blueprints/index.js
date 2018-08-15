@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
-import { Link, graphql } from 'gatsby'
-import { Sidebar } from 'semantic-ui-react'
+import { graphql } from 'gatsby'
 import MainLayout from '../MainLayout'
 import styles from './styles.module.scss'
-import { cloneDeep, get, map, set } from 'lodash'
-import { Accordion } from 'components/organisms'
+import { cloneDeep, get, set } from 'lodash'
+import { Sidebar } from 'components/organisms'
 
 function upsertAtPath(path, value, obj) {
   obj = cloneDeep(obj)
@@ -12,24 +11,6 @@ function upsertAtPath(path, value, obj) {
   set(obj, path, { ...pathValue, ...value })
 
   return obj
-}
-
-const SidebarContent = ({ tree }) => {
-  return map(tree, node => {
-    if (node.hasOwnProperty('children')) {
-      return (
-        <Accordion key={node.title} link={node.slug} title={node.title}>
-          <SidebarContent tree={node.children} />
-        </Accordion>
-      )
-    }
-
-    return (
-      <Link key={node.title} to={node.slug}>
-        <h3>{node.title}</h3>
-      </Link>
-    )
-  })
 }
 
 export default class Blueprints extends Component {
@@ -63,9 +44,7 @@ export default class Blueprints extends Component {
 
     return (
       <MainLayout>
-        <Sidebar className={styles.sidebar} visible width="wide">
-          <SidebarContent tree={sidebarTree} />
-        </Sidebar>
+        <Sidebar tree={sidebarTree} />
 
         <div className={styles.contentContainer}>
           <h1>{post.frontmatter.title}</h1>
