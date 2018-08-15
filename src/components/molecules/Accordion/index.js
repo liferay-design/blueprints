@@ -23,7 +23,9 @@ export default class Accordion extends Component {
         </Link>
 
         <div
-          className={this.state.showChildren ? styles.visible : styles.hidden}
+          className={`${styles.childrenContainer} ${
+            this.state.showChildren ? styles.visible : styles.hidden
+          }`}
         >
           {this.props.children}
         </div>
