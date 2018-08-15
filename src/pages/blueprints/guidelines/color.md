@@ -1,8 +1,6 @@
 ---
-title: "Color"
-description: "Color usage."
-layout: "guide"
-weight: 2
+title: 'Color'
+description: 'Color usage.'
 ---
 
 ### Using Color

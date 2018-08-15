@@ -1,8 +1,6 @@
 ---
-title: "Font Files"
+title: 'Font Files'
 description: "Liferay's corporate font files."
-layout: "guide"
-weight: 2
 ---
 
 ### Primary Fonts

@@ -1,8 +1,6 @@
 ---
-title: "Digital"
-description: "Using colors in digital applications"
-layout: "guide"
-weight: 1
+title: 'Digital'
+description: 'Using colors in digital applications'
 ---
 
 ### Main

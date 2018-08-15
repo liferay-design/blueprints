@@ -1,8 +1,6 @@
 ---
-title: "Typography"
-description: "Typeface usage."
-layout: "guide"
-weight: 4
+title: 'Typography'
+description: 'Typeface usage.'
 ---
 
 ### Primary Typefaces
