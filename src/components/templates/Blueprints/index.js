@@ -2,34 +2,35 @@ import React, { Component } from 'react'
 import { Link, graphql } from 'gatsby'
 import { Sidebar } from 'semantic-ui-react'
 import MainLayout from '../MainLayout'
-import classes from './styles.module.scss'
-import { cloneDeep, get, set } from 'lodash'
+import styles from './styles.module.scss'
+import { cloneDeep, get, map, set } from 'lodash'
+import { Accordion } from 'components/organisms'
 
 function upsertAtPath(path, value, obj) {
   obj = cloneDeep(obj)
   const pathValue = get(obj, path)
-
-  if (!pathValue) {
-    set(obj, path, value)
-  } else {
-    set(obj, path, { ...pathValue, ...value })
-  }
+  set(obj, path, { ...pathValue, ...value })
 
   return obj
 }
 
-const path1 = 'guidelines'
-const path2 = 'guidelines.children.color'
-const obj2 = upsertAtPath(
-  path1,
-  { title: 'guidelines', slug: '/guidelines' },
-  {}
-)
-const obj3 = upsertAtPath(
-  path2,
-  { title: 'color', slug: '/guidelines/color' },
-  obj2
-)
+const SidebarContent = ({ tree }) => {
+  return map(tree, node => {
+    if (node.hasOwnProperty('children')) {
+      return (
+        <Accordion key={node.title} link={node.slug} title={node.title}>
+          <SidebarContent tree={node.children} />
+        </Accordion>
+      )
+    }
+
+    return (
+      <Link key={node.title} to={node.slug}>
+        <h3>{node.title}</h3>
+      </Link>
+    )
+  })
+}
 
 export default class Blueprints extends Component {
   buildSidebarTree(markdownNodes) {
@@ -58,30 +59,24 @@ export default class Blueprints extends Component {
     const post = this.props.data.markdownRemark
     const markdown = this.props.data.allMarkdownRemark
 
-    this.buildSidebarTree(markdown)
+    const sidebarTree = this.buildSidebarTree(markdown)
 
     return (
       <MainLayout>
-        <div>
-          <Sidebar visible width="wide">
-            {markdown.edges.map(({ node }) => (
-              <Link key={node.id} to={node.fields.slug}>
-                <h3>{node.frontmatter.title}</h3>
-              </Link>
-            ))}
-          </Sidebar>
+        <Sidebar className={styles.sidebar} visible width="wide">
+          <SidebarContent tree={sidebarTree} />
+        </Sidebar>
 
-          <div className={classes.contentContainer}>
-            <h1>{post.frontmatter.title}</h1>
+        <div className={styles.contentContainer}>
+          <h1>{post.frontmatter.title}</h1>
 
-            <h2>Blueprints</h2>
+          <h2>Blueprints</h2>
 
-            <div
-              dangerouslySetInnerHTML={{
-                __html: post.html,
-              }}
-            />
-          </div>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: post.html,
+            }}
+          />
         </div>
       </MainLayout>
     )
