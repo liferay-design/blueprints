@@ -1,9 +1,8 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-import { MainLayout } from 'components/templates'
+// import { MainLayout } from 'components/templates'
 
 export default ({ data }) => {
-  console.log('data', data)
   return (
     <div>
       <h1>BluePrints</h1>
