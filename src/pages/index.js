@@ -2,6 +2,8 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import { MainLayout } from 'components/templates'
 
+import 'semantic-ui-css/semantic.min.css'
+
 export default ({ data }) => {
   return (
     <MainLayout>
