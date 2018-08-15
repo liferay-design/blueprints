@@ -1,3 +1,4 @@
 import Header from './Header'
+import Accordion from './Accordion'
 
-export { Header }
+export { Accordion, Header }
