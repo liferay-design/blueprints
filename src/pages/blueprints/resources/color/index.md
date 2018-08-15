@@ -1,5 +1,5 @@
 ---
-title: 'Placeholder for index Color'
+title: 'Color'
 description: 'Need to fill this in'
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: 'Placeholder for index Guidelines'
+title: 'Guidelines'
 description: 'Need to fill this in'
 ---
 

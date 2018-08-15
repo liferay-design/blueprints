@@ -1,10 +1,10 @@
 .accordion {
-  > h3 {
+  h3 {
     background: none;
     border-radius: 5%;
     cursor: pointer;
-
-    padding: 1rem 2rem;
+    margin: 0.5rem 0;
+    padding: 0.25rem 1rem;
     transition: background 0.5s;
 
     &:hover {
@@ -12,6 +12,10 @@
       transition: background 0.5s;
     }
   }
+}
+
+.children-container {
+  padding-left: 0.7rem;
 }
 
 .visible {
