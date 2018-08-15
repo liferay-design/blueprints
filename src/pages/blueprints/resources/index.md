@@ -1,8 +1,6 @@
 ---
-title: "Resources"
+title: 'Resources'
 description: "Liferay's Brand Resources"
-layout: "guide"
-weight: 4
 ---
 
 ### Liferay Brand Resources

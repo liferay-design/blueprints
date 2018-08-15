@@ -1,9 +1,6 @@
 ---
-title: "About"
+title: 'About'
 description: "Liferay's Brand Guidelines"
-layout: "guide"
-icon: "lexicon-site-about"
-weight: 1
 ---
 
 ### Why Blueprints?

@@ -1,8 +1,6 @@
 ---
-title: "Logos"
-description: "Guidelines for using the Liferay Logos"
-layout: "guide"
-weight: 1
+title: 'Logos'
+description: 'Guidelines for using the Liferay Logos'
 ---
 
 ### Usage Guidelines for Liferay Logos

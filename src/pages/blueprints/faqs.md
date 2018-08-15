@@ -1,9 +1,6 @@
 ---
-title: "FAQ"
-description: "Frequently Asked Questions"
-layout: "guide"
-icon: "lexicon-site-about"
-weight: 5
+title: 'FAQ'
+description: 'Frequently Asked Questions'
 ---
 
 ### I need to update the logo for [my thing], how do I do that?

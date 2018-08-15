@@ -1,8 +1,6 @@
 ---
-title: "Illustration"
-description: "What is our illustration style?"
-layout: "guide"
-weight: 3
+title: 'Illustration'
+description: 'What is our illustration style?'
 ---
 
 ### Style

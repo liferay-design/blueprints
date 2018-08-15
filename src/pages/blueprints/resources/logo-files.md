@@ -1,8 +1,6 @@
 ---
-title: "Logos"
+title: 'Logos'
 description: "Liferay's logo and product logos in all the formats you need."
-layout: "guide"
-weight: 3
 ---
 
 Before you do anything with these files, make sure you thoroughly review our [logo guidelines](/docs/guidelines/logo-usage.html)!

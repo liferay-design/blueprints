@@ -1,8 +1,6 @@
 ---
-title: "Legal"
-description: "Using colors in digital applications"
-layout: "guide"
-weight: 100
+title: 'Legal'
+description: 'Using colors in digital applications'
 ---
 
 ### Global Responsibility

@@ -1,8 +1,6 @@
 ---
-title: "Print"
-description: "Using colors for print."
-layout: "guide"
-weight: 2
+title: 'Print'
+description: 'Using colors for print.'
 ---
 
 If you'd like, download our [.ase file](/../resources/colors/print/liferay-brand-palette-cmyk.ase) for use across Adobe Products.

@@ -1,9 +1,6 @@
 ---
-title: "Principles"
+title: 'Principles'
 description: "Liferay's Brand Principles"
-layout: "guide"
-icon: "lexicon-site-about"
-weight: 2
 ---
 
 1.  **Confident** &mdash; _Business done well will improve the world._
