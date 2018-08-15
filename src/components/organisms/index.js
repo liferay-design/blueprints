@@ -1,4 +1,4 @@
 import Header from './Header'
-import Accordion from './Accordion'
+import Sidebar from './Sidebar'
 
-export { Accordion, Header }
+export { Header, Sidebar }
