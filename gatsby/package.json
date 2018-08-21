@@ -1,0 +1,32 @@
+{
+  "name": "blueprints",
+  "description": "Liferay Design Team's Guidlines Site",
+  "version": "1.0.0",
+  "author": "Ryan Garant <ryan.garant@liferay.com>",
+  "dependencies": {
+    "gatsby": "next",
+    "gatsby-link": "next",
+    "gatsby-plugin-react-helmet": "^2.0.11",
+    "gatsby-source-filesystem": "^1.5.39",
+    "gatsby-transformer-remark": "^1.7.44",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-helmet": "^5.2.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop",
+    "format": "prettier --write 'src/**/*.js'"
+  },
+  "devDependencies": {
+    "prettier": "^1.13.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  }
+}

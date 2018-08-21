@@ -1,0 +1,36 @@
+.docs header {
+	padding: $base-size / 2 0;
+	@media (min-width: $grid-float-breakpoint) {
+		padding: $base-size 0;
+	}
+	.lexicon-site-container {
+		display: flex;
+		align-items: flex-start;
+	}
+}
+
+.about {
+	font-size: 18px;
+	padding: $base-size 0;
+}
+
+.lexicon-icon-list {
+	&:after {
+		clear: both;
+		content: '';
+		display: block;
+		height: 0;
+		visibility: hidden;
+	}
+	li span {
+		margin-left: 4px;
+	}
+}
+
+@media (min-width: $screen-xs) {
+	.lexicon-icon-list li {
+		float: left;
+		padding: 5px;
+		width: 33%;
+	}
+}

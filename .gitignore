@@ -37,5 +37,14 @@ temp
 
 # Optional REPL history
 .node_repl_history
-
 .publish
+
+<<<<<<< HEAD
+#.ds files
+.DS_Store
+
+#auth directory
+/auth/*
+=======
+.publish.DS_Store
+>>>>>>> 7b710778185d00b86a91c9eff9e69d6bb1a3b7fd

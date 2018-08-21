@@ -1,0 +1,25 @@
+.color-card .card-subtitle {
+  text-transform: uppercase;
+  color: $brand-secondary;
+}
+
+.color-card .card-subtitle span {
+  font-weight: 600;
+  letter-spacing: 0.1ch;
+  color: $neutral7;
+  width: 6ch;
+  display: inline-block;
+}
+
+textarea {
+  border: none; //color: #{map-get($swatch-color,"alt-text")};
+  resize: none;
+  padding: 0;
+  width: 12ch;
+  vertical-align: bottom;
+  text-transform: uppercase;
+}
+
+textarea:focus {
+  border: none; //outline: 2px solid #{map-get($swatch-color,"elemental")};
+}

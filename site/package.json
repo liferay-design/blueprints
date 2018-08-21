@@ -1,0 +1,32 @@
+{
+  "name": "liferay-brand-guidelines",
+  "version": "0.0.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liferay-design/blueprints"
+  },
+  "scripts": {
+    "start": "electric"
+  },
+  "dependencies": {
+    "bourbon": "^4.3.3",
+    "clay": "2.0.0-rc.5",
+    "clay-label": "^2.0.0-rc.11",
+    "electric-cli": "^3.0.0",
+    "lexicon-ux": "^1.0.25",
+    "source-sans-pro": "^2.0.10"
+  },
+  "devDependencies": {
+    "boxen": "^1.0.0",
+    "chalk": "^1.1.3",
+    "countries-list": "^2.0.0",
+    "electric-clay-components": "^3.0.0",
+    "fecha": "^2.3.1",
+    "languages": "^0.1.3",
+    "lodash": "^4.17.4",
+    "metal-component": "^2.10.0",
+    "metal-toggler": "^2.0.0",
+    "true-case-path": "^1.0.2"
+  }
+}

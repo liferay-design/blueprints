@@ -1,0 +1,214 @@
+---
+title: "Home"
+description: "Liferay's brand resources and guidelines."
+---
+
+{namespace pageIndex}
+
+/**
+ */
+{template .render}
+	{call main.render data="all"}
+		{param content kind="html"}
+			{call .header data="all" /}
+		{/param}
+		{param elementClasses: 'home' /}
+	{/call}
+{/template}
+
+/**
+ */
+{template .header}
+	<header class="header">
+		<nav class="navbar fixed-top navbar-lexicon-site navbar-expand-lg navbar-dark px-0 px-sm-3">
+			<div class="container-fluid container-fluid-max-lg">
+				<div class="navbar-brand">
+					<img class="logo mr-2 mr-sm-2" src="/images/icons/liferay-blueprints-white.svg" alt="">
+				</div>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item d-none d-sm-flex">
+						<a class="nav-link ml-3" href="docs/about.html">About</a>
+					</li>
+					<li class="nav-item d-none d-sm-flex">
+						<a class="nav-link ml-3" href="docs/guidelines/logo-usage.html">Guidelines</a>
+					</li>
+					<li class="nav-item d-none d-sm-flex">
+						<a class="nav-link ml-3" href="docs/resources">Resources</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="intro text-center col">
+					<div class="container-fluid container-fluid-max-lg">
+						<h1 class="h1">Blueprints</h1>
+						<h2 class="h3">Brand Guidelines for Liferay</h2>
+						<a class="btn btn-lg btn-light font-weight-bold mx-3 mb-4" href="/docs/about.html">Get Started</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	{call .teasers data="all" /}
+
+	{call .contactus data="all" /}
+
+	// {call .linkblocks data="all" /}
+
+	{call .footer data="all" /}
+{/template}
+
+/**
+ *
+ */
+{template .teasers}
+	<section class="teasers" id="teasers">
+		<div class="container-fluid container-fluid-max-lg">
+			<div class="row mb-4">
+				<div class="col-1 d-none d-md-block">
+					<div class="vertical-title text-uppercase text-nowrap">Explore Blueprints</div>
+				</div>
+
+				<div class="col-md-5 text-center">
+					<a class="card" href="/docs/about.html">
+						<div class="wow fadeInUp">
+							<div class="card-body">
+							<img class="mx-auto" src="/images/home/why-blueprints.svg" alt="">
+								<h2 class="font-weight-bold">Why Blueprints?</h2>
+								<p>A single source of truth for Liferay so that we can go far, together.</p>
+								<p class="btn btn-sm text-uppercase font-weight-bold"><img class="mr-2" src="/images/home/chevron-right.svg" alt="">Read More</p>
+						</div>
+					</div>
+					</a>
+				</div>
+				<div class="col-md-5 text-center mt-4 mt-md-0">
+					<a class="card" href="/docs/resources/logo-files.html">
+						<div class="wow fadeInUp" data-wow-delay="0.1s">
+						<div class="card-body">
+							<img class="mx-auto" src="/images/home/logos.svg" alt="">
+							<h2 class="font-weight-bold">Just the Logos, Please</h2>
+								<p>We know what you’re looking for, and we respect that. So much so that we put this the top of the page.</p>
+								<p class="btn btn-sm text-uppercase font-weight-bold"><img class="mr-2" src="/images/home/chevron-right.svg" alt="">Waffle Time</p>
+						</div>
+					</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-10 mx-auto">
+					<a href="/docs/resources" class="card">
+						<div class="wow fadeInLeft" data-wow-offset="100">
+							<div class="row">
+								<div class="col-md-6 text-center">
+									<div class="card-body pb-0">
+										<img class="pt-4 pt-md-5 mobile-size" src="/images/home/resources.svg" alt="">
+									</div>
+								</div>
+								<div class="col-md-6 text-center text-md-left">
+									<div class="card-body pl-md-0 pt-4 pt-md-5 pb-4">
+										<h2 class="font-weight-bold pt-1">Resources</h2>
+										<p>The reason you've come to this site&mdash;logos, colors, fonts, images&mdash;get it all right here!</p>
+										<p class="btn btn-sm text-uppercase font-weight-bold pl-md-0"><img class="mr-2" src="/images/home/chevron-right.svg" alt="">Get 'Em</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="row mt-4">
+				<div class="col-md-5 text-center ml-auto">
+					<a href="/docs/faqs.html" class="card">
+						<div class="text-center wow fadeInUp">
+							<div class="card-body text-center">
+								<img class="mx-auto" src="/images/home/faqs.svg" alt="">
+								<h2 class="font-weight-bold">FAQ</h2>
+								<p>Have a question? We have frequently given answers.</p>
+								<p class="btn btn-sm text-uppercase font-weight-bold"><img class="mr-2" src="/images/home/chevron-right.svg" alt="">Why is the Liferay Blue?</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-5 text-center mt-4 mt-md-0">
+					<a href="https://liferay.design" class="card">
+						<div class="wow fadeInUp" data-wow-delay="0.1s">
+							<div class="card-body">
+								<img class="mx-auto" src="/images/home/liferay.design.svg" alt="">
+								<h2 class="font-weight-bold">Liferay.Design</h2>
+								<p>Shameless plug for the people behind all of this stuff&mdash;see what else we're doing.</p>
+								<p class="btn btn-sm text-uppercase font-weight-bold"><img class="mr-2" src="/images/home/chevron-right.svg" alt="">Experience liferay.design</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-1">
+					<ul class="social-icons">
+						<li>
+							<a href="https://dribbble.com/liferay" target="_blank"><img src="/images/home/dribble.png" alt=""></a>
+						</li>
+						<li>
+							<a href="https://github.com/liferay/lexicon-site" target="_blank"><img src="/images/home/GitHub-Mark-64px.svg" alt=""></a>
+						</li>
+						<li>
+							<a href="https://twitter.com/Liferay_Lexicon" target="_blank"><img src="/images/home/twitter.svg" alt=""></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+{/template}
+
+/**
+ */
+{template .contactus}
+	<section class="contact-us">
+		<div class="container-fluid container-fluid-max-lg">
+			<div class="row">
+				<div class="col-md-4 ml-auto mr-lg-4 wow zoomIn" data-wow-duration="1.2s">
+					<div class="text-center text-lg-right">
+						<img src="/images/home/jira.svg" alt="">
+					</div>
+				</div>
+				<div class="col-md-6 mr-auto wow zoomIn"  style="margin-top: 1rem;" data-wow-duration="0.8s">
+					<div class="media-body mt-4 mr-3 text-lg-left">
+						<h2 class="font-weight-bold">Need something? <br> <span class="subtitle">Head over to Jira and <a href="https://issues.liferay.com/secure/CreateIssueDetails!init.jspa?pid=10780&issuetype=17" target="_blank">create an issue</a>!</span></h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{/template}
+
+/**
+ */
+{template .footer}
+	<div class="footer">
+		<div class="container-fluid container-fluid-max-lg">
+			<div class="row">
+				<div class="col-lg text-center text-lg-left mb-4 mb-lg-0">
+					<img class="logo" style="height: 20px; vertical-align: text-top;" src="/images/icons/icon-liferay-white.svg">
+
+					<div class="clearfix d-lg-none"></div>
+
+					Brought to you by <a href="https://liferay.design" target="_blank">Liferay.Design</a>
+				</div>
+
+				<div class="col-lg text-center text-lg-right">
+					<div>Powered by <a href="https://wedeploy.com/" target="_blank">WeDeploy™</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="/scripts/wow.min.js"></script>
+	<script src="/scripts/home.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+{/template}
