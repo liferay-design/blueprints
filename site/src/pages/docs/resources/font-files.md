@@ -36,7 +36,7 @@ weight: 2
 					<div class="card-row">
 						<div class="autofit-col autofit-col-expand">
 							<div class="card-title text-truncate" title="Color Name"><h3 style="margin-top: 16px;">Source Han Sans</h3></div>
-							<a href="/../resources/fonts/SourceHanSans.ttc.zip" target="_blank" download="source-sans-pro"><button class="btn btn-primary" type="button">Download .zip</button></a>
+							<a href="/../resources/fonts/SourceHanSans.ttc.zip" target="_blank" download="source-han-sans"><button class="btn btn-primary" type="button">Download .zip</button></a>
                             <a target="_blank" href="https://fonts.google.com/specimen/Source+Han+Sans" class="" style="margin: 1rem 0 1.5rem;">Use on Google Fonts</a>
 							<div class="card-detail">
 							</div>
@@ -60,7 +60,7 @@ weight: 2
 					<div class="card-row">
 						<div class="autofit-col autofit-col-expand">
 							<div class="card-title text-truncate" title="Color Name"><h3 style="margin-top: 16px;">Source Serif Pro</h3></div>
-							<a href="/../resources/fonts/source-serif-pro-2.000R.zip" target="_blank" download="source-sans-pro"><button class="btn btn-primary" type="button">Download .zip</button></a>
+							<a href="/../resources/fonts/source-serif-pro-2.000R.zip" target="_blank" download="source-serif-pro"><button class="btn btn-primary" type="button">Download .zip</button></a>
                             <a target="_blank" href="https://fonts.google.com/specimen/Source+Serif+Pro" class="" style="margin: 1rem 0 1.5rem;">Use on Google Fonts</a>
 							<div class="card-detail">
 							</div>
@@ -79,7 +79,7 @@ weight: 2
 					<div class="card-row">
 						<div class="autofit-col autofit-col-expand">
 							<div class="card-title text-truncate" title="Color Name"><h3 style="margin-top: 16px;">Source Code Pro</h3></div>
-							<a href="/../resources/fonts/source-code-pro-2.030R-ro-1.050R-it.zip" target="_blank" download="source-sans-pro"><button class="btn btn-primary" type="button">Download .zip</button></a>
+							<a href="/../resources/fonts/source-code-pro-2.030R-ro-1.050R-it.zip" target="_blank" download="source-code-pro"><button class="btn btn-primary" type="button">Download .zip</button></a>
                             <a target="_blank" href="https://fonts.google.com/specimen/Source+Code+Pro" class="" style="margin: 1rem 0 1.5rem;">Use on Google Fonts</a>
 							<div class="card-detail">
 							</div>
