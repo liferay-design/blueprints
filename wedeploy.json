@@ -1,0 +1,5 @@
+{
+	"id": "site",
+	"image": "wedeploy/hosting:2.0.1",
+	"port": 0
+}

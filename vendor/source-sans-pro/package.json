@@ -1,0 +1,96 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "source-sans-pro@^2.0.10",
+        "scope": null,
+        "escapedName": "source-sans-pro",
+        "name": "source-sans-pro",
+        "rawSpec": "^2.0.10",
+        "spec": ">=2.0.10 <3.0.0",
+        "type": "range"
+      },
+      "/Users/plhnk/Github/blueprints/site"
+    ]
+  ],
+  "_from": "source-sans-pro@>=2.0.10 <3.0.0",
+  "_id": "source-sans-pro@2.20.2",
+  "_inCache": true,
+  "_location": "/source-sans-pro",
+  "_nodeVersion": "9.5.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/source-sans-pro-2.20.2.tgz_1517551763198_0.8963097943924367"
+  },
+  "_npmUser": {
+    "name": "msousa",
+    "email": "msousa@adobe.com"
+  },
+  "_npmVersion": "5.6.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "source-sans-pro@^2.0.10",
+    "scope": null,
+    "escapedName": "source-sans-pro",
+    "name": "source-sans-pro",
+    "rawSpec": "^2.0.10",
+    "spec": ">=2.0.10 <3.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/source-sans-pro/-/source-sans-pro-2.20.2.tgz",
+  "_shasum": "ee24a6f9680af4e05736be9c1afee3d714618782",
+  "_shrinkwrap": null,
+  "_spec": "source-sans-pro@^2.0.10",
+  "_where": "/Users/plhnk/Github/blueprints/site",
+  "author": {
+    "name": "Paul D. Hunt"
+  },
+  "bugs": {
+    "url": "https://github.com/adobe-fonts/source-sans-pro/issues"
+  },
+  "contributors": [
+    {
+      "name": "Miguel Sousa"
+    }
+  ],
+  "dependencies": {},
+  "description": "Source Sans Pro is a set of OpenType fonts that have been designed to work well in user interface (UI) environments.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-/HW4xC0C9KjeyE/lmZxZKYaQgdde1QTBQG3ynNpvWJKb1l93dsiBF31OlGmxJAZH2oeLeWAn9v7g7z2aDkrEUw==",
+    "shasum": "ee24a6f9680af4e05736be9c1afee3d714618782",
+    "tarball": "https://registry.npmjs.org/source-sans-pro/-/source-sans-pro-2.20.2.tgz"
+  },
+  "gitHead": "97a03d3affa5e8f2bdeb3b964b2cd00eae749420",
+  "homepage": "https://adobe-fonts.github.io/source-sans-pro",
+  "keywords": [
+    "font",
+    "sans-serif",
+    "Adobe",
+    "OpenType",
+    "otf",
+    "ttf",
+    "woff",
+    "woff2",
+    "eot"
+  ],
+  "license": "SIL Open Font License 1.1",
+  "maintainers": [
+    {
+      "name": "msousa",
+      "email": "msousa@adobe.com"
+    }
+  ],
+  "name": "source-sans-pro",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adobe-fonts/source-sans-pro.git#release"
+  },
+  "version": "2.20.2"
+}
