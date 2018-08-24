@@ -32,4 +32,4 @@ We have a candid, humble voice in our marketing and sales materials — to suppo
 
 ### Awesome — I Think These Could Be Better, How Can I Contribute
 
-Review the various GDocs linked from this site and add comments, or edit directly on Github from links at the bottom of each page.
+Review the various GDocs linked from this site and add comments, or edit the content directly on Github using the links at the bottom of each page.
