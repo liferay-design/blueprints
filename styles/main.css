@@ -14415,6 +14415,9 @@ mark,
   font-size: 18px;
   padding: 24px 0; }
 
+.aspect-ratio.letter {
+  padding-bottom: 130%; }
+
 .lexicon-icon-list:after {
   clear: both;
   content: '';
